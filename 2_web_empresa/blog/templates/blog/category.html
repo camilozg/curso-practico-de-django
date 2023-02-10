@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {% for post in category.post_set.all %}
+        {% include 'blog/post_list.html' %}
+    {% endfor %}
+{% endblock content %}
